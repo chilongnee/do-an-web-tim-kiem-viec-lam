@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #8fd9c4;
+    z-index: 1;
+    padding-left: 20px;
+}
+
+.f-left {
+    display: flex;
+}
+
+#header .logo {
+    width: 82.75px;
+    height: 60px;
+}
+
+/* NAV */
+.nav li {
+    position: relative;
+}
+
+.nav li a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 60px;
+    padding: 0 10px;
+}
+
+/* SUBNAV VIỆC LÀM */
+.subnav {
+    display: none;
+    padding: 0;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.vieclam {
+    min-width: 160px;
+}
+
+.subnav li {
+    display: block;
+}
+
+.nav .subnav a {
+    display: block;
+    color: #000;
+    padding: 0px 12px;
+    line-height: 38px;
+}
+
+.subnav li:hover a {
+    color: #000;
+    background-color: #ccc;
+}
+
+.nav > li:hover .subnav {
+    display: block;
+}
+
+/* LOGIN LOGOUT */
+.log-in-out {
+    padding: 0;
+}
+
+.log-in-out li {
+    position: relative;
+}
+
+.log-in-out .subnav a {
+    display: block;
+    color: #000;
+    padding: 0px 12px;
+    line-height: 30px;
+}
+
+.language {
+    min-width: 50px;
+}
+
+.log-in-out > li:hover .subnav {
+    display: block;
+}
+/* BUTTONS */
+.btn {
+    border: 0;
+    padding: 0;
+}
+
+.btn .log-in-out {
+    display: flex;
+    list-style-type: none;
+    margin: 0 4px;
+}
+
+.btn .log-in-out li {
+    line-height: 60px;
+}
+
+.log-in-out li a {
+    color: #fff;
+    text-decoration: none;
+    line-height: 60px;
+}
+
+.log-in-out span {
+    color: #fff;
+    padding: 0 10px;
+    border-right: 1px solid #fff;
+}
+
+.log-in-out .nav-arrow-down {
+    font-size: 8px;
+    vertical-align: middle;
+}
+
+
+
+
